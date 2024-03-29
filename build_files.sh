@@ -1,4 +1,6 @@
 # build_files.sh
+
+pip install -r requirements.txt
 which python3.9
 pwd
 cd /usr/local/bin/
