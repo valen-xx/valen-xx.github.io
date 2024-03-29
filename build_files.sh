@@ -1,5 +1,2 @@
-
-pip -m pip  install -r requirements.txt
-
-
-python3 manage.py collectstatic --noinpout 
+pip install -r requirements.txt
+python3.9 manage.py collectstatic
