@@ -1,7 +1,7 @@
 {
     "builds": [
       {
-        "src": "hydra/wsgi.py",
+        "src": "backend/wsgi.py",
         "use": "@vercel/python",
         "config": {
           "maxlambdaSize": "15mb",
@@ -19,7 +19,7 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "hydra/wsgi.py"
+        "dest": "backend/wsgi.py"
       }
     ],
 
