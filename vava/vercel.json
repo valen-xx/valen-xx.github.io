@@ -1,0 +1,31 @@
+{
+    "builds": [
+      {
+        "src": "vava/wsgi.py",
+        "use": "@vercel/python",
+        "config": {
+          "maxlambdaSize": "15mb",
+          "runtime": "3.9"
+        }
+      },
+      {
+        "src": "build_files.sh",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "staticfiles"
+        }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "vava/wsgi.py"
+      }
+    ],
+
+
+    "outputDirectory": "staticfiles"
+
+    
+  }
+  
